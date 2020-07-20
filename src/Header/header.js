@@ -141,10 +141,7 @@ const Header = () => {
             Teachers
           </Link>
           <div className="dropdown-menu">
-            <Link
-              to="boxed-instructor-dashboard.html"
-              className="dropdown-item"
-            >
+            <Link to="/instructor-dashboard" className="dropdown-item">
               Instructor Dashboard
             </Link>
             <Link to="boxed-instructor-courses.html" className="dropdown-item">
