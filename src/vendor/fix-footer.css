@@ -1,0 +1,15 @@
+.fix-js-footer {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+@media (min-width: 768px) {
+  .fix-footer--fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.trial3 {
+  background-color: brown;
+}
