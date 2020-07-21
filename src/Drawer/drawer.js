@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "react-perfect-scrollbar/dist/css/styles.css";
+import PerfectScrollbar from "react-perfect-scrollbar";
 
 class Drawer extends React.Component {
   render() {
