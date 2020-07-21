@@ -1,20 +1,52 @@
-import React from "react";
-import { connect } from "react-redux";
+import React from "react"
+import { connect } from "react-redux"
 
-import { Link } from "react-router-dom";
-import { LoginAction } from "../Actions/actions";
+import { Link } from "react-router-dom"
+import { LoginAction } from "../Actions/actions"
 
 class LoginPage extends React.Component {
-  state = { email: "", password: "" };
+  constructor() {
+    super()
+    this.state = { email: "", password: "" }
+    this.onSubmit = this.onSubmit.bind(this)
+    this.onChange = this.onChange.bind(this)
+  }
+
+  componentDidMount() {
+    if (this.props.Credentials.isAuthenticated) {
+      this.props.history.push("/")
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.Credentials.isAuthenticated) {
+      this.props.history.push("/")
+    }
+  }
+
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  onSubmit(e) {
+    e.preventDefault()
+    const userData = {
+      email: this.state.email,
+      password: this.state.password
+    }
+
+    this.props.LoginAction(userData)
+  }
+
   render() {
-    console.log(this.state);
+    console.log(this.state)
     return (
       <div className="layout-default layout-login-image">
         <div
           className="layout-login-image__overlay"
           style={{
             backgroundImage:
-              "url(assets/images/1280_15ntkpxqt54y-sai-kiran-anagani.jpg)",
+              "url(assets/images/1280_15ntkpxqt54y-sai-kiran-anagani.jpg)"
           }}
         >
           <div className="fullbleed bg-dark" style={{ opacity: ".5" }}></div>
@@ -46,7 +78,7 @@ class LoginPage extends React.Component {
           <h4 className="m-0">Welcome back!</h4>
           <p className="mb-5">Login to access your Luma Account </p>
 
-          <form action="fixed-index.html" novalidate>
+          <form onSubmit={this.onSubmit} noValidate>
             <div className="form-group">
               <label className="text-label" for="email_2">
                 Email Address:
@@ -55,10 +87,10 @@ class LoginPage extends React.Component {
                 <input
                   id="email_2"
                   type="email"
-                  required=""
+                  name="email"
                   className="form-control form-control-prepended"
-                  onChange={(e) => this.setState({ email: e.target.value })}
-                  placeholder="john@doe.com"
+                  onChange={this.onChange}
+                  placeholder="Email"
                 />
                 <div className="input-group-prepend">
                   <div className="input-group-text">
@@ -75,8 +107,8 @@ class LoginPage extends React.Component {
                 <input
                   id="password_2"
                   type="password"
-                  required=""
-                  onChange={(e) => this.setState({ password: e.target.value })}
+                  name="password"
+                  onChange={this.onChange}
                   className="form-control form-control-prepended"
                   placeholder="Enter your password"
                 />
@@ -87,25 +119,8 @@ class LoginPage extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="form-group mb-5">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  checked=""
-                  id="remember"
-                />
-                <label className="custom-control-label" for="remember">
-                  Remember me
-                </label>
-              </div>
-            </div>
             <div className="form-group text-center">
-              <button
-                className="btn btn-primary mb-5"
-                onClick={this.login}
-                type="submit"
-              >
+              <button className="btn btn-primary mb-5" type="submit">
                 Login
               </button>
               <br />
@@ -118,19 +133,12 @@ class LoginPage extends React.Component {
           </form>
         </div>
       </div>
-    );
+    )
   }
-  login = (event) => {
-    event.preventDefault();
-    const credentials = this.state;
-    console.log(credentials);
-    this.props.login(credentials);
-  };
 }
-const mapStateToProps = (state) => {
-  console.log(12211);
-  console.log(state);
-  return state;
-};
 
-export default connect(mapStateToProps, { login: LoginAction })(LoginPage);
+const mapStateToProps = (state) => ({
+  Credentials: state.Credentials
+})
+
+export default connect(mapStateToProps, { LoginAction })(LoginPage)

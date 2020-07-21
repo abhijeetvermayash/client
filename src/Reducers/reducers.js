@@ -1,20 +1,26 @@
-import { combineReducers } from "redux";
+import { combineReducers } from "redux"
+import isEmpty from "../validation/is-empty"
 
-const ReducerAuthenticate = (state = {}, action) => {
+const initialState = {
+  isAuthenticated: false,
+  user: {}
+}
+
+const ReducerAuthenticate = (state = initialState, action) => {
   switch (action.type) {
-    case "LOGIN":
-      console.log(111);
-      return { ...state, [action.payload.id]: action.payload };
-    case "SIGNUP":
-      console.log(222);
-      return { ...state, [action.payload.id]: action.payload };
+    case "SET_CURRENT_USER":
+      console.log(111)
+      return {
+        ...state,
+        isAuthenticated: !isEmpty(action.payload),
+        user: action.payload
+      }
 
     default:
-      return state;
+      return state
   }
-};
+}
 
 export default combineReducers({
-  dummy: "{1}",
-  Credentials: ReducerAuthenticate,
-});
+  Credentials: ReducerAuthenticate
+})

@@ -1,7 +1,8 @@
-import React from "react";
-import Header from "../../Header/header";
-import Drawer from "../../Drawer/drawer";
-import InstructorHeader from "../../Header/instructor-header";
+import React from "react"
+import { Link } from "react-router-dom"
+import Header from "../../Header/header"
+import Drawer from "../../Drawer/drawer"
+import InstructorHeader from "../../Header/instructor-header"
 
 class InstructorCourses extends React.Component {
   render() {
@@ -22,7 +23,7 @@ class InstructorCourses extends React.Component {
 
                     <ol class="breadcrumb p-0 m-0">
                       <li class="breadcrumb-item">
-                        <a href="index.html">Home</a>
+                        <Link to="index.html">Home</Link>
                       </li>
 
                       <li class="breadcrumb-item active">Courses</li>
@@ -32,12 +33,12 @@ class InstructorCourses extends React.Component {
 
                 <div class="row" role="tablist">
                   <div class="col-auto">
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="btn btn-outline-secondary"
                     >
                       Add Course
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -59,8 +60,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position=""
                     >
@@ -74,24 +75,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Learn Angular fundamentals
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -216,12 +217,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -234,8 +235,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position=""
                     >
@@ -249,24 +250,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Build an iOS Application in Swift
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -391,12 +392,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -409,8 +410,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position=""
                     >
@@ -424,24 +425,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Build a WordPress Website
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -566,12 +567,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -584,8 +585,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position="left"
                     >
@@ -599,24 +600,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Become a React Native Developer
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -741,12 +742,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -756,30 +757,30 @@ class InstructorCourses extends React.Component {
               <div class="mb-32pt">
                 <ul class="pagination justify-content-start pagination-xsm m-0">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#" aria-label="Previous">
+                    <Link class="page-link" to="#" aria-label="Previous">
                       <span aria-hidden="true" class="material-icons">
                         chevron_left
                       </span>
                       <span>Prev</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Page 1">
+                    <Link class="page-link" to="#" aria-label="Page 1">
                       <span>1</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Page 2">
+                    <Link class="page-link" to="#" aria-label="Page 2">
                       <span>2</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                    <Link class="page-link" to="#" aria-label="Next">
                       <span>Next</span>
                       <span aria-hidden="true" class="material-icons">
                         chevron_right
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -796,8 +797,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position=""
                     >
@@ -811,24 +812,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Learn Sketch
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -951,12 +952,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -969,8 +970,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position=""
                     >
@@ -984,24 +985,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Learn Flinto
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -1124,12 +1125,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1142,8 +1143,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position=""
                     >
@@ -1157,24 +1158,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Learn Photoshop
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -1297,12 +1298,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1315,8 +1316,8 @@ class InstructorCourses extends React.Component {
                     data-toggle="popover"
                     data-trigger="click"
                   >
-                    <a
-                      href="boxed-instructor-edit-course.html"
+                    <Link
+                      to="boxed-instructor-edit-course.html"
                       class="js-image"
                       data-position=""
                     >
@@ -1330,24 +1331,24 @@ class InstructorCourses extends React.Component {
                           <span class="card-title text-white">Edit</span>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                     <div class="mdk-reveal__content">
                       <div class="card-body">
                         <div class="d-flex">
                           <div class="flex">
-                            <a
+                            <Link
                               class="card-title mb-4pt"
-                              href="boxed-instructor-edit-course.html"
+                              to="boxed-instructor-edit-course.html"
                             >
                               Newsletter Design
-                            </a>
+                            </Link>
                           </div>
-                          <a
-                            href="boxed-instructor-edit-course.html"
+                          <Link
+                            to="boxed-instructor-edit-course.html"
                             class="ml-4pt material-icons text-black-20 card-course__icon-favorite"
                           >
                             edit
-                          </a>
+                          </Link>
                         </div>
                         <div class="d-flex">
                           <div class="rating flex">
@@ -1470,12 +1471,12 @@ class InstructorCourses extends React.Component {
                         </div>
                       </div>
                       <div class="col text-right">
-                        <a
-                          href="boxed-instructor-edit-course.html"
+                        <Link
+                          to="boxed-instructor-edit-course.html"
                           class="btn btn-primary"
                         >
                           Edit course
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1484,30 +1485,30 @@ class InstructorCourses extends React.Component {
 
               <ul class="pagination justify-content-start pagination-xsm m-0">
                 <li class="page-item disabled">
-                  <a class="page-link" href="#" aria-label="Previous">
+                  <Link class="page-link" to="#" aria-label="Previous">
                     <span aria-hidden="true" class="material-icons">
                       chevron_left
                     </span>
                     <span>Prev</span>
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Page 1">
+                  <Link class="page-link" to="#" aria-label="Page 1">
                     <span>1</span>
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Page 2">
+                  <Link class="page-link" to="#" aria-label="Page 2">
                     <span>2</span>
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
+                  <Link class="page-link" to="#" aria-label="Next">
                     <span>Next</span>
                     <span aria-hidden="true" class="material-icons">
                       chevron_right
                     </span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -1531,12 +1532,12 @@ class InstructorCourses extends React.Component {
                   eCommerce and more.
                 </p>
                 <p class="mb-8pt d-flex">
-                  <a href="" class="text-70 text-underline mr-8pt small">
+                  <Link to="" class="text-70 text-underline mr-8pt small">
                     Terms
-                  </a>
-                  <a href="" class="text-70 text-underline small">
+                  </Link>
+                  <Link to="" class="text-70 text-underline small">
                     Privacy policy
-                  </a>
+                  </Link>
                 </p>
                 <p class="text-50 small mt-n1 mb-0">
                   Copyright 2019 &copy; All rights reserved.
@@ -1547,7 +1548,7 @@ class InstructorCourses extends React.Component {
           <Drawer />
         </div>
       </div>
-    );
+    )
   }
 }
-export default InstructorCourses;
+export default InstructorCourses
