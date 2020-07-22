@@ -5,6 +5,8 @@ import Drawer from "../../Drawer/drawer";
 import InstructorHeader from "../../Header/instructor-header";
 import Upload from "../../Upload/upload";
 import { AddCourseAction } from "../../Actions/actions";
+import InsDrawer from "../../Drawer/instructordrawer";
+import Form from "../../DynamicInput/form";
 
 class InstructorAddCourse extends React.Component {
   constructor() {
@@ -68,6 +70,7 @@ class InstructorAddCourse extends React.Component {
                         component={this.renderform}
                       />
                       <br />
+                      <Form />
                       <Upload title="Upload Your Zip files here" />
                       <br />
                       <br />
@@ -105,7 +108,7 @@ class InstructorAddCourse extends React.Component {
                         </small>
                       </div>
                     </div>
-                    <Upload title="Upload Your Trial Video here" />
+                    <Upload title="Upload Your Sample/Cover Video here" />
                     <br />
                     <Upload title="Upload Your Course Image here" />
                   </div>
@@ -113,7 +116,7 @@ class InstructorAddCourse extends React.Component {
               </div>
             </div>
           </div>
-          <Drawer />
+          <InsDrawer />
         </div>
       </div>
     );

@@ -31,6 +31,15 @@ class InsDrawer extends React.Component {
               <li className="sidebar-menu-item">
                 <Link
                   className="sidebar-menu-button"
+                  to="/instructor-add-course"
+                >
+                  <span className="material-icons sidebar-menu-icon sidebar-menu-icon--left">
+                    school
+                  </span>
+                  <span className="sidebar-menu-text">Add Course</span>
+                </Link>
+                <Link
+                  className="sidebar-menu-button"
                   to="boxed-instructor-dashboard.html"
                 >
                   <span className="material-icons sidebar-menu-icon sidebar-menu-icon--left">

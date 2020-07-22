@@ -28,6 +28,17 @@ const ReducerCourses = (state = {}, action) => {
       return { ...state, ..._.mapKeys(action.payload, "id") };
     case "FETCH_INSTRUCTOR_COURSES":
       return { ...state, ..._.mapKeys(action.payload, "id") };
+    case "ADD_COURSE":
+      return { ...state, [action.payload.id]: action.payload };
+    default:
+      return state;
+  }
+};
+const ReducersSection = (state = {}, action) => {
+  switch (action.type) {
+    case "ADD_SECTION": {
+      return action.payload;
+    }
     default:
       return state;
   }
@@ -36,5 +47,6 @@ const ReducerCourses = (state = {}, action) => {
 export default combineReducers({
   Credentials: ReducerAuthenticate,
   course: ReducerCourses,
+  Sections: ReducersSection,
   form: FormReducer,
 });
