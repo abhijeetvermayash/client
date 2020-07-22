@@ -3,10 +3,13 @@ import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
 import Drawer from "../../Drawer/drawer";
 import InstructorHeader from "../../Header/instructor-header";
-import Upload from "../../Upload/upload";
+import Upload from "../../Upload/uploadzip";
 import { AddCourseAction } from "../../Actions/actions";
 import InsDrawer from "../../Drawer/instructordrawer";
 import Form from "../../DynamicInput/form";
+import UploadVideo from "../../Upload/uploadvideo";
+import UploadImage from "../../Upload/uploadimage";
+import UploadZip from "../../Upload/uploadzip";
 
 class InstructorAddCourse extends React.Component {
   constructor() {
@@ -71,7 +74,7 @@ class InstructorAddCourse extends React.Component {
                       />
                       <br />
                       <Form />
-                      <Upload title="Upload Your Zip files here" />
+                      <UploadZip title="Upload Your Zip files here" />
                       <br />
                       <br />
                       <button
@@ -108,9 +111,9 @@ class InstructorAddCourse extends React.Component {
                         </small>
                       </div>
                     </div>
-                    <Upload title="Upload Your Sample/Cover Video here" />
+                    <UploadVideo title="Upload Your Sample/Cover Video here" />
                     <br />
-                    <Upload title="Upload Your Course Image here" />
+                    <UploadImage title="Upload Your Course Image here" />
                   </div>
                 </div>
               </div>

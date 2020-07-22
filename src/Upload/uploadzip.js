@@ -3,7 +3,7 @@ import { ProgressBar } from "react-bootstrap";
 
 import React, { Component } from "react";
 
-class Upload extends Component {
+class UploadZip extends Component {
   state = {
     // Initially, no file is selected
     selectedFile: null,
@@ -107,4 +107,4 @@ class Upload extends Component {
   }
 }
 
-export default Upload;
+export default UploadZip;
