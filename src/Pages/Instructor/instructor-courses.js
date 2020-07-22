@@ -4,7 +4,7 @@ import Header from "../../Header/header";
 import Drawer from "../../Drawer/drawer";
 import InstructorHeader from "../../Header/instructor-header";
 import { connect } from "react-redux";
-import { FetchInstructorCoursesAction } from "../../Actions/actions";
+import { FetchInstructorCoursesAction } from "../../Actions/courseActions";
 import InsDrawer from "../../Drawer/instructordrawer";
 
 class InstructorCourses extends React.Component {

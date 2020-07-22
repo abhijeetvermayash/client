@@ -6,7 +6,7 @@ import {
   NotificationContainer,
   NotificationManager,
 } from "react-notifications";
-import { AddSectionAction } from "../Actions/actions";
+import { AddSectionAction } from "../Actions/courseActions";
 
 class Form extends React.Component {
   state = {

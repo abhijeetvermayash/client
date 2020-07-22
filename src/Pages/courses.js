@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/header";
 import Drawer from "../Drawer/drawer";
 import { Link } from "react-router-dom";
-import { FetchCourseAction } from "../Actions/actions";
+import { FetchCourseAction } from "../Actions/courseActions";
 import { connect } from "react-redux";
 
 class Courses extends React.Component {

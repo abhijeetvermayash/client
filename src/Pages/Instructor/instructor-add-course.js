@@ -1,10 +1,8 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
-import Drawer from "../../Drawer/drawer";
 import InstructorHeader from "../../Header/instructor-header";
-import Upload from "../../Upload/uploadzip";
-import { AddCourseAction } from "../../Actions/actions";
+import { AddCourseAction } from "../../Actions/courseActions";
 import InsDrawer from "../../Drawer/instructordrawer";
 import Form from "../../DynamicInput/form";
 import UploadVideo from "../../Upload/uploadvideo";
