@@ -1,15 +1,15 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import { connect } from "react-redux"
-import { logoutUser } from "../Actions/actions"
+import React from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { logoutUser } from "../Actions/actions";
 
 class Header extends React.Component {
   onLogoutClick(e) {
-    e.preventDefault()
-    this.props.logoutUser()
+    e.preventDefault();
+    this.props.logoutUser();
   }
   render() {
-    const { isAuthenticated, user } = this.props.Credentials
+    const { isAuthenticated, user } = this.props.Credentials;
 
     const authLinks = (
       <ul className="nav navbar-nav ml-auto mr-0">
@@ -23,7 +23,7 @@ class Header extends React.Component {
           </Link>
         </li>
       </ul>
-    )
+    );
 
     const guestLinks = (
       <ul className="nav navbar-nav ml-auto mr-0">
@@ -45,7 +45,7 @@ class Header extends React.Component {
           </Link>
         </li>
       </ul>
-    )
+    );
 
     return (
       <div
@@ -95,7 +95,7 @@ class Header extends React.Component {
               Courses
             </Link>
             <div className="dropdown-menu">
-              <Link to="boxed-courses.html" className="dropdown-item">
+              <Link to="/courses" className="dropdown-item">
                 Browse Courses
               </Link>
               <Link to="boxed-student-course.html" className="dropdown-item">
@@ -303,11 +303,11 @@ class Header extends React.Component {
         </form>
         {isAuthenticated ? authLinks : guestLinks}
       </div>
-    )
+    );
   }
 }
 
 const mapStateToProps = (state) => ({
-  Credentials: state.Credentials
-})
-export default connect(mapStateToProps, { logoutUser })(Header)
+  Credentials: state.Credentials,
+});
+export default connect(mapStateToProps, { logoutUser })(Header);

@@ -13,7 +13,7 @@ class Drawer extends React.Component {
             data-perfect-scrollbar
           >
             <Link
-              to="boxed-index.html"
+              to="/"
               className="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood"
             >
               <span className="avatar avatar-xl sidebar-brand-icon h-auto">

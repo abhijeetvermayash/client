@@ -1,26 +1,38 @@
-import { combineReducers } from "redux"
-import isEmpty from "../validation/is-empty"
+import { combineReducers } from "redux";
+import isEmpty from "../validation/is-empty";
+import _ from "lodash";
 
 const initialState = {
   isAuthenticated: false,
-  user: {}
-}
+  user: {},
+};
 
 const ReducerAuthenticate = (state = initialState, action) => {
   switch (action.type) {
     case "SET_CURRENT_USER":
-      console.log(111)
+      console.log(111);
       return {
         ...state,
         isAuthenticated: !isEmpty(action.payload),
-        user: action.payload
-      }
+        user: action.payload,
+      };
 
     default:
-      return state
+      return state;
   }
-}
+};
+const ReducerCourses = (state = {}, action) => {
+  switch (action.type) {
+    case "FETCH_COURSES":
+      return { ...state, ..._.mapKeys(action.payload, "id") };
+    case "FETCH_INSTRUCTOR_COURSES":
+      return { ...state, ..._.mapKeys(action.payload, "id") };
+    default:
+      return state;
+  }
+};
 
 export default combineReducers({
-  Credentials: ReducerAuthenticate
-})
+  Credentials: ReducerAuthenticate,
+  course: ReducerCourses,
+});

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/header";
 import Drawer from "../Drawer/drawer";
 import Preloader from "../preloader";
-import {Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 class HomePage extends React.Component {
   render() {
@@ -25,7 +25,7 @@ class HomePage extends React.Component {
                     className="mdk-box__bg-front"
                     style={{
                       backgroundImage:
-                        "url(assets/images/photodune-4161018-group-of-students-m.jpg)", //I have to add background image here
+                        "url(/assets/images/photodune-4161018-group-of-students-m.jpg)", //I have to add background image here
                     }}
                   ></div>
                 </div>
@@ -39,7 +39,7 @@ class HomePage extends React.Component {
                     </p>
 
                     <Link
-                      to="boxed-courses.html"
+                      to="/courses"
                       className="btn btn-lg btn-white btn--raised mb-16pt"
                     >
                       Browse Courses
@@ -111,7 +111,7 @@ class HomePage extends React.Component {
                     <div className="col-md-6 col-lg-4 card-group-row__col">
                       <div className="card card--elevated posts-card-popular overlay card-group-row__card">
                         <img
-                          src="assets/images/paths/sketch_430x168.png"
+                          src="/assets/images/paths/sketch_430x168.png"
                           alt=""
                           className="card-img"
                         />
@@ -130,7 +130,7 @@ class HomePage extends React.Component {
                               >
                                 <Link to="">
                                   <img
-                                    src="assets/images/256_luke-porter-261779-unsplash.jpg"
+                                    src="/assets/images/256_luke-porter-261779-unsplash.jpg"
                                     alt="Avatar"
                                     className="avatar-img rounded-circle"
                                   />
@@ -169,7 +169,7 @@ class HomePage extends React.Component {
                     <div className="col-md-6 col-lg-4 card-group-row__col">
                       <div className="card card--elevated posts-card-popular overlay card-group-row__card">
                         <img
-                          src="assets/images/paths/invision_430x168.png"
+                          src="/assets/images/paths/invision_430x168.png"
                           alt=""
                           className="card-img"
                         />
@@ -188,7 +188,7 @@ class HomePage extends React.Component {
                               >
                                 <Link to="">
                                   <img
-                                    src="assets/images/256_michael-dam-258165-unsplash.jpg"
+                                    src="/assets/images/256_michael-dam-258165-unsplash.jpg"
                                     alt="Avatar"
                                     className="avatar-img rounded-circle"
                                   />
@@ -227,7 +227,7 @@ class HomePage extends React.Component {
                     <div className="col-md-6 col-lg-4 card-group-row__col">
                       <div className="card card--elevated posts-card-popular overlay card-group-row__card">
                         <img
-                          src="assets/images/paths/photoshop_430x168.png"
+                          src="/assets/images/paths/photoshop_430x168.png"
                           alt=""
                           className="card-img"
                         />
@@ -246,7 +246,7 @@ class HomePage extends React.Component {
                               >
                                 <Link to="">
                                   <img
-                                    src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
+                                    src="/assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
                                     alt="Avatar"
                                     className="avatar-img rounded-circle"
                                   />
@@ -289,7 +289,7 @@ class HomePage extends React.Component {
                         <div className="avatar avatar-lg mr-3">
                           <Link to="boxed-blog-post.html">
                             <img
-                              src="assets/images/paths/invision_200x168.png"
+                              src="/assets/images/paths/invision_200x168.png"
                               alt="avatar"
                               className="avatar-img rounded"
                             />
@@ -323,7 +323,7 @@ class HomePage extends React.Component {
                                 title="Janell D."
                               >
                                 <img
-                                  src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
+                                  src="/assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
                                   alt="Avatar"
                                   className="avatar-img rounded-circle"
                                 />
@@ -336,7 +336,7 @@ class HomePage extends React.Component {
                                 title="Janell D."
                               >
                                 <img
-                                  src="assets/images/256_michael-dam-258165-unsplash.jpg"
+                                  src="/assets/images/256_michael-dam-258165-unsplash.jpg"
                                   alt="Avatar"
                                   className="avatar-img rounded-circle"
                                 />
@@ -349,7 +349,7 @@ class HomePage extends React.Component {
                                 title="Janell D."
                               >
                                 <img
-                                  src="assets/images/256_luke-porter-261779-unsplash.jpg"
+                                  src="/assets/images/256_luke-porter-261779-unsplash.jpg"
                                   alt="Avatar"
                                   className="avatar-img rounded-circle"
                                 />
@@ -385,7 +385,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/react_40x40@2x.png"
+                                      src="/assets/images/paths/react_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -430,7 +430,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/react_40x40@2x.png"
+                              src="/assets/images/paths/react_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -534,7 +534,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/devops_40x40@2x.png"
+                                      src="/assets/images/paths/devops_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -579,7 +579,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/devops_40x40@2x.png"
+                              src="/assets/images/paths/devops_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -683,7 +683,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/redis_40x40@2x.png"
+                                      src="/assets/images/paths/redis_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -728,7 +728,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/redis_40x40@2x.png"
+                              src="/assets/images/paths/redis_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -834,7 +834,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/mailchimp_40x40@2x.png"
+                                      src="/assets/images/paths/mailchimp_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -879,7 +879,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/mailchimp_40x40@2x.png"
+                              src="/assets/images/paths/mailchimp_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -983,7 +983,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/swift_40x40@2x.png"
+                                      src="/assets/images/paths/swift_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -1028,7 +1028,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/swift_40x40@2x.png"
+                              src="/assets/images/paths/swift_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1132,7 +1132,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/wordpress_40x40@2x.png"
+                                      src="/assets/images/paths/wordpress_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -1177,7 +1177,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/wordpress_40x40@2x.png"
+                              src="/assets/images/paths/wordpress_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1290,7 +1290,7 @@ class HomePage extends React.Component {
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/sketch_430x168.png"
+                            src="/assets/images/paths/sketch_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -1376,7 +1376,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/sketch_40x40@2x.png"
+                              src="/assets/images/paths/sketch_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1498,7 +1498,7 @@ class HomePage extends React.Component {
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/flinto_430x168.png"
+                            src="/assets/images/paths/flinto_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -1584,7 +1584,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/flinto_40x40@2x.png"
+                              src="/assets/images/paths/flinto_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1706,7 +1706,7 @@ class HomePage extends React.Component {
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/photoshop_430x168.png"
+                            src="/assets/images/paths/photoshop_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -1792,7 +1792,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/photoshop_40x40@2x.png"
+                              src="/assets/images/paths/photoshop_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1916,7 +1916,7 @@ class HomePage extends React.Component {
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/figma_430x168.png"
+                            src="/assets/images/paths/figma_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -2002,7 +2002,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/figma_40x40@2x.png"
+                              src="/assets/images/paths/figma_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -2308,7 +2308,7 @@ class HomePage extends React.Component {
                   <p className="text-70 brand mb-24pt">
                     <img
                       className="brand-icon"
-                      src="assets/images/logo/black-70@2x.png"
+                      src="/assets/images/logo/black-70@2x.png"
                       width="30"
                       alt="Luma"
                     />{" "}
@@ -2335,7 +2335,6 @@ class HomePage extends React.Component {
                 </div>
               </div>
             </div>
-            <Drawer />
           </div>
         </div>
       </div>
