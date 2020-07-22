@@ -48,3 +48,8 @@ export const FetchInstructorCoursesAction = () => async (dispatch) => {
   const response = await axios.get("");
   dispatch({ type: "FETCH_INSTRUCTOR_COURSES", payload: response.data });
 };
+
+export const AddCourseAction = (formValues) => async (dispatch) => {
+  const res = await axios.post("", formValues);
+  dispatch({ type: "ADD_COURSE", payload: res.data });
+};

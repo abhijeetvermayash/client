@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
 import isEmpty from "../validation/is-empty";
 import _ from "lodash";
+import { reducer as FormReducer } from "redux-form";
 
 const initialState = {
   isAuthenticated: false,
@@ -35,4 +36,5 @@ const ReducerCourses = (state = {}, action) => {
 export default combineReducers({
   Credentials: ReducerAuthenticate,
   course: ReducerCourses,
+  form: FormReducer,
 });
