@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/header";
 import Drawer from "../Drawer/drawer";
 import Preloader from "../preloader";
+import { Link } from "react-router-dom";
 
 class HomePage extends React.Component {
   render() {
@@ -24,7 +25,7 @@ class HomePage extends React.Component {
                     className="mdk-box__bg-front"
                     style={{
                       backgroundImage:
-                        "url(assets/images/photodune-4161018-group-of-students-m.jpg)", //I have to add background image here
+                        "url(/assets/images/photodune-4161018-group-of-students-m.jpg)", //I have to add background image here
                     }}
                   ></div>
                 </div>
@@ -37,17 +38,17 @@ class HomePage extends React.Component {
                       professional tutorials.
                     </p>
 
-                    <a
-                      href="boxed-courses.html"
+                    <Link
+                      to="/courses"
                       className="btn btn-lg btn-white btn--raised mb-16pt"
                     >
                       Browse Courses
-                    </a>
+                    </Link>
 
                     <p className="mb-0">
-                      <a href="" className="text-white text-shadow">
+                      <Link to="" className="text-white text-shadow">
                         <strong>Are you a teacher?</strong>
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -110,7 +111,7 @@ class HomePage extends React.Component {
                     <div className="col-md-6 col-lg-4 card-group-row__col">
                       <div className="card card--elevated posts-card-popular overlay card-group-row__card">
                         <img
-                          src="assets/images/paths/sketch_430x168.png"
+                          src="/assets/images/paths/sketch_430x168.png"
                           alt=""
                           className="card-img"
                         />
@@ -127,19 +128,19 @@ class HomePage extends React.Component {
                                 data-placement="top"
                                 title="Janell D."
                               >
-                                <a href="">
+                                <Link to="">
                                   <img
-                                    src="assets/images/256_luke-porter-261779-unsplash.jpg"
+                                    src="/assets/images/256_luke-porter-261779-unsplash.jpg"
                                     alt="Avatar"
                                     className="avatar-img rounded-circle"
                                   />
-                                </a>
+                                </Link>
                               </div>
                             </div>
-                            <a
+                            <Link
                               style={{ textDecoration: "none" }}
                               className="d-flex align-items-center"
-                              href=""
+                              to=""
                             >
                               <i
                                 className="material-icons mr-1"
@@ -148,18 +149,18 @@ class HomePage extends React.Component {
                                 remove_red_eye
                               </i>{" "}
                               <small>327</small>
-                            </a>
+                            </Link>
                           </div>
                           <div className="posts-card-popular__title card-body">
                             <small className="text-muted text-uppercase">
                               sketch
                             </small>
-                            <a
+                            <Link
                               className="card-title"
-                              href="boxed-blog-post.html"
+                              to="boxed-blog-post.html"
                             >
                               Merge Duplicates Inconsistent Symbols
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -168,7 +169,7 @@ class HomePage extends React.Component {
                     <div className="col-md-6 col-lg-4 card-group-row__col">
                       <div className="card card--elevated posts-card-popular overlay card-group-row__card">
                         <img
-                          src="assets/images/paths/invision_430x168.png"
+                          src="/assets/images/paths/invision_430x168.png"
                           alt=""
                           className="card-img"
                         />
@@ -185,19 +186,19 @@ class HomePage extends React.Component {
                                 data-placement="top"
                                 title="Janell D."
                               >
-                                <a href="">
+                                <Link to="">
                                   <img
-                                    src="assets/images/256_michael-dam-258165-unsplash.jpg"
+                                    src="/assets/images/256_michael-dam-258165-unsplash.jpg"
                                     alt="Avatar"
                                     className="avatar-img rounded-circle"
                                   />
-                                </a>
+                                </Link>
                               </div>
                             </div>
-                            <a
+                            <Link
                               style={{ textDecoration: "none" }}
                               className="d-flex align-items-center"
-                              href=""
+                              to=""
                             >
                               <i
                                 className="material-icons mr-1"
@@ -206,18 +207,18 @@ class HomePage extends React.Component {
                                 remove_red_eye
                               </i>{" "}
                               <small>327</small>
-                            </a>
+                            </Link>
                           </div>
                           <div className="posts-card-popular__title card-body">
                             <small className="text-muted text-uppercase">
                               invision
                             </small>
-                            <a
+                            <Link
                               className="card-title"
-                              href="boxed-blog-post.html"
+                              to="boxed-blog-post.html"
                             >
                               Design Systems Essentials
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -226,7 +227,7 @@ class HomePage extends React.Component {
                     <div className="col-md-6 col-lg-4 card-group-row__col">
                       <div className="card card--elevated posts-card-popular overlay card-group-row__card">
                         <img
-                          src="assets/images/paths/photoshop_430x168.png"
+                          src="/assets/images/paths/photoshop_430x168.png"
                           alt=""
                           className="card-img"
                         />
@@ -243,19 +244,19 @@ class HomePage extends React.Component {
                                 data-placement="top"
                                 title="Janell D."
                               >
-                                <a href="">
+                                <Link to="">
                                   <img
-                                    src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
+                                    src="/assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
                                     alt="Avatar"
                                     className="avatar-img rounded-circle"
                                   />
-                                </a>
+                                </Link>
                               </div>
                             </div>
-                            <a
+                            <Link
                               style={{ textDecoration: "none" }}
                               className="d-flex align-items-center"
-                              href=""
+                              to=""
                             >
                               <i
                                 className="material-icons mr-1"
@@ -264,18 +265,18 @@ class HomePage extends React.Component {
                                 remove_red_eye
                               </i>{" "}
                               <small>327</small>
-                            </a>
+                            </Link>
                           </div>
                           <div className="posts-card-popular__title card-body">
                             <small className="text-muted text-uppercase">
                               photoshop
                             </small>
-                            <a
+                            <Link
                               className="card-title"
-                              href="boxed-blog-post.html"
+                              to="boxed-blog-post.html"
                             >
                               Semantic Logo Design
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -286,21 +287,21 @@ class HomePage extends React.Component {
                     <div className="card posts-card mb-0">
                       <div className="posts-card__content d-flex align-items-center flex-wrap">
                         <div className="avatar avatar-lg mr-3">
-                          <a href="boxed-blog-post.html">
+                          <Link to="boxed-blog-post.html">
                             <img
-                              src="assets/images/paths/invision_200x168.png"
+                              src="/assets/images/paths/invision_200x168.png"
                               alt="avatar"
                               className="avatar-img rounded"
                             />
-                          </a>
+                          </Link>
                         </div>
                         <div className="posts-card__title flex d-flex flex-column">
-                          <a
-                            href="boxed-blog-post.html"
+                          <Link
+                            to="boxed-blog-post.html"
                             className="card-title mr-3"
                           >
                             Design Systems Essentials
-                          </a>
+                          </Link>
                           <small className="text-50">35 views last week</small>
                         </div>
                         <div className="d-flex align-items-center flex-column flex-sm-row posts-card__meta">
@@ -322,7 +323,7 @@ class HomePage extends React.Component {
                                 title="Janell D."
                               >
                                 <img
-                                  src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
+                                  src="/assets/images/256_rsz_1andy-lee-642320-unsplash.jpg"
                                   alt="Avatar"
                                   className="avatar-img rounded-circle"
                                 />
@@ -335,7 +336,7 @@ class HomePage extends React.Component {
                                 title="Janell D."
                               >
                                 <img
-                                  src="assets/images/256_michael-dam-258165-unsplash.jpg"
+                                  src="/assets/images/256_michael-dam-258165-unsplash.jpg"
                                   alt="Avatar"
                                   className="avatar-img rounded-circle"
                                 />
@@ -348,14 +349,14 @@ class HomePage extends React.Component {
                                 title="Janell D."
                               >
                                 <img
-                                  src="assets/images/256_luke-porter-261779-unsplash.jpg"
+                                  src="/assets/images/256_luke-porter-261779-unsplash.jpg"
                                   alt="Avatar"
                                   className="avatar-img rounded-circle"
                                 />
                               </div>
                             </div>
                             <div className="media-body">
-                              <a href="">+2 more</a>
+                              <Link to="">+2 more</Link>
                             </div>
                           </div>
                         </div>
@@ -384,7 +385,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/react_40x40@2x.png"
+                                      src="/assets/images/paths/react_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -411,8 +412,8 @@ class HomePage extends React.Component {
                               </div>
                             </div>
 
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -420,7 +421,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -429,7 +430,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/react_40x40@2x.png"
+                              src="/assets/images/paths/react_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -469,18 +470,18 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="d-flex align-items-center justify-content-center">
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-primary mr-8pt"
                             >
                               Resume
-                            </a>
-                            <a
-                              href="boxed-student-path.html"
+                            </Link>
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-outline-secondary ml-0"
                             >
                               Start over
-                            </a>
+                            </Link>
                           </div>
                         </div>
 
@@ -533,7 +534,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/devops_40x40@2x.png"
+                                      src="/assets/images/paths/devops_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -560,8 +561,8 @@ class HomePage extends React.Component {
                               </div>
                             </div>
 
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -569,7 +570,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -578,7 +579,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/devops_40x40@2x.png"
+                              src="/assets/images/paths/devops_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -618,18 +619,18 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="d-flex align-items-center justify-content-center">
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-primary mr-8pt"
                             >
                               Resume
-                            </a>
-                            <a
-                              href="boxed-student-path.html"
+                            </Link>
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-outline-secondary ml-0"
                             >
                               Start over
-                            </a>
+                            </Link>
                           </div>
                         </div>
 
@@ -682,7 +683,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/redis_40x40@2x.png"
+                                      src="/assets/images/paths/redis_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -709,8 +710,8 @@ class HomePage extends React.Component {
                               </div>
                             </div>
 
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -718,7 +719,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -727,7 +728,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/redis_40x40@2x.png"
+                              src="/assets/images/paths/redis_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -767,18 +768,18 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="d-flex align-items-center justify-content-center">
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-primary mr-8pt"
                             >
                               Resume
-                            </a>
-                            <a
-                              href="boxed-student-path.html"
+                            </Link>
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-outline-secondary ml-0"
                             >
                               Start over
-                            </a>
+                            </Link>
                           </div>
                         </div>
 
@@ -833,7 +834,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/mailchimp_40x40@2x.png"
+                                      src="/assets/images/paths/mailchimp_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -860,8 +861,8 @@ class HomePage extends React.Component {
                               </div>
                             </div>
 
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -869,7 +870,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -878,7 +879,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/mailchimp_40x40@2x.png"
+                              src="/assets/images/paths/mailchimp_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -918,18 +919,18 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="d-flex align-items-center justify-content-center">
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-primary mr-8pt"
                             >
                               Resume
-                            </a>
-                            <a
-                              href="boxed-student-path.html"
+                            </Link>
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-outline-secondary ml-0"
                             >
                               Start over
-                            </a>
+                            </Link>
                           </div>
                         </div>
 
@@ -982,7 +983,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/swift_40x40@2x.png"
+                                      src="/assets/images/paths/swift_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -1009,8 +1010,8 @@ class HomePage extends React.Component {
                               </div>
                             </div>
 
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -1018,7 +1019,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1027,7 +1028,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/swift_40x40@2x.png"
+                              src="/assets/images/paths/swift_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1067,18 +1068,18 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="d-flex align-items-center justify-content-center">
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-primary mr-8pt"
                             >
                               Resume
-                            </a>
-                            <a
-                              href="boxed-student-path.html"
+                            </Link>
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-outline-secondary ml-0"
                             >
                               Start over
-                            </a>
+                            </Link>
                           </div>
                         </div>
 
@@ -1131,7 +1132,7 @@ class HomePage extends React.Component {
                                 <div className="rounded mr-12pt z-0 o-hidden">
                                   <div className="overlay">
                                     <img
-                                      src="assets/images/paths/wordpress_40x40@2x.png"
+                                      src="/assets/images/paths/wordpress_40x40@2x.png"
                                       width="40"
                                       height="40"
                                       alt="Angular"
@@ -1158,8 +1159,8 @@ class HomePage extends React.Component {
                               </div>
                             </div>
 
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -1167,7 +1168,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1176,7 +1177,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/wordpress_40x40@2x.png"
+                              src="/assets/images/paths/wordpress_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1216,18 +1217,18 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="d-flex align-items-center justify-content-center">
-                            <a
-                              href="boxed-student-path.html"
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-primary mr-8pt"
                             >
                               Resume
-                            </a>
-                            <a
-                              href="boxed-student-path.html"
+                            </Link>
+                            <Link
+                              to="boxed-student-path.html"
                               className="btn btn-outline-secondary ml-0"
                             >
                               Start over
-                            </a>
+                            </Link>
                           </div>
                         </div>
 
@@ -1282,14 +1283,14 @@ class HomePage extends React.Component {
                         data-toggle="popover"
                         data-trigger="click"
                       >
-                        <a
-                          href="boxed-student-course.html"
+                        <Link
+                          to="boxed-student-course.html"
                           className="card-img-top js-image"
                           data-position=""
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/sketch_430x168.png"
+                            src="/assets/images/paths/sketch_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -1302,23 +1303,23 @@ class HomePage extends React.Component {
                               </span>
                             </span>
                           </span>
-                        </a>
+                        </Link>
 
                         <div className="card-body flex">
                           <div className="d-flex">
                             <div className="flex">
-                              <a
+                              <Link
                                 className="card-title"
-                                href="boxed-student-course.html"
+                                to="boxed-student-course.html"
                               >
                                 Learn Sketch
-                              </a>
+                              </Link>
                               <small className="text-50 font-weight-bold mb-4pt">
                                 Elijah Murray
                               </small>
                             </div>
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -1326,7 +1327,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                           <div className="d-flex">
                             <div className="rating flex">
@@ -1375,7 +1376,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/sketch_40x40@2x.png"
+                              src="/assets/images/paths/sketch_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1473,12 +1474,12 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="col text-right">
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               className="btn btn-primary"
                             >
                               Watch trailer
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1490,14 +1491,14 @@ class HomePage extends React.Component {
                         data-toggle="popover"
                         data-trigger="click"
                       >
-                        <a
-                          href="boxed-student-course.html"
+                        <Link
+                          to="boxed-student-course.html"
                           className="card-img-top js-image"
                           data-position=""
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/flinto_430x168.png"
+                            src="/assets/images/paths/flinto_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -1510,23 +1511,23 @@ class HomePage extends React.Component {
                               </span>
                             </span>
                           </span>
-                        </a>
+                        </Link>
 
                         <div className="card-body flex">
                           <div className="d-flex">
                             <div className="flex">
-                              <a
+                              <Link
                                 className="card-title"
-                                href="boxed-student-course.html"
+                                to="boxed-student-course.html"
                               >
                                 Learn Flinto
-                              </a>
+                              </Link>
                               <small className="text-50 font-weight-bold mb-4pt">
                                 Elijah Murray
                               </small>
                             </div>
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -1534,7 +1535,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                           <div className="d-flex">
                             <div className="rating flex">
@@ -1583,7 +1584,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/flinto_40x40@2x.png"
+                              src="/assets/images/paths/flinto_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1681,12 +1682,12 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="col text-right">
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               className="btn btn-primary"
                             >
                               Watch trailer
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1698,14 +1699,14 @@ class HomePage extends React.Component {
                         data-toggle="popover"
                         data-trigger="click"
                       >
-                        <a
-                          href="boxed-student-course.html"
+                        <Link
+                          to="boxed-student-course.html"
                           className="card-img-top js-image"
                           data-position=""
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/photoshop_430x168.png"
+                            src="/assets/images/paths/photoshop_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -1718,23 +1719,23 @@ class HomePage extends React.Component {
                               </span>
                             </span>
                           </span>
-                        </a>
+                        </Link>
 
                         <div className="card-body flex">
                           <div className="d-flex">
                             <div className="flex">
-                              <a
+                              <Link
                                 className="card-title"
-                                href="boxed-student-course.html"
+                                to="boxed-student-course.html"
                               >
                                 Learn Photoshop
-                              </a>
+                              </Link>
                               <small className="text-50 font-weight-bold mb-4pt">
                                 Elijah Murray
                               </small>
                             </div>
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -1742,7 +1743,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                           <div className="d-flex">
                             <div className="rating flex">
@@ -1791,7 +1792,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/photoshop_40x40@2x.png"
+                              src="/assets/images/paths/photoshop_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -1891,12 +1892,12 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="col text-right">
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               className="btn btn-primary"
                             >
                               Watch trailer
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -1908,14 +1909,14 @@ class HomePage extends React.Component {
                         data-toggle="popover"
                         data-trigger="click"
                       >
-                        <a
-                          href="boxed-student-course.html"
+                        <Link
+                          to="boxed-student-course.html"
                           className="card-img-top js-image"
                           data-position=""
                           data-height="140"
                         >
                           <img
-                            src="assets/images/paths/figma_430x168.png"
+                            src="/assets/images/paths/figma_430x168.png"
                             alt="course"
                           />
                           <span className="overlay__content">
@@ -1928,23 +1929,23 @@ class HomePage extends React.Component {
                               </span>
                             </span>
                           </span>
-                        </a>
+                        </Link>
 
                         <div className="card-body flex">
                           <div className="d-flex">
                             <div className="flex">
-                              <a
+                              <Link
                                 className="card-title"
-                                href="boxed-student-course.html"
+                                to="boxed-student-course.html"
                               >
                                 Learn Figma
-                              </a>
+                              </Link>
                               <small className="text-50 font-weight-bold mb-4pt">
                                 Elijah Murray
                               </small>
                             </div>
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               data-toggle="tooltip"
                               data-title="Add Favorite"
                               data-placement="top"
@@ -1952,7 +1953,7 @@ class HomePage extends React.Component {
                               className="ml-4pt material-icons text-20 card-course__icon-favorite"
                             >
                               favorite_border
-                            </a>
+                            </Link>
                           </div>
                           <div className="d-flex">
                             <div className="rating flex">
@@ -2001,7 +2002,7 @@ class HomePage extends React.Component {
                         <div className="media">
                           <div className="media-left mr-12pt">
                             <img
-                              src="assets/images/paths/figma_40x40@2x.png"
+                              src="/assets/images/paths/figma_40x40@2x.png"
                               width="40"
                               height="40"
                               alt="Angular"
@@ -2099,12 +2100,12 @@ class HomePage extends React.Component {
                             </div>
                           </div>
                           <div className="col text-right">
-                            <a
-                              href="boxed-student-course.html"
+                            <Link
+                              to="boxed-student-course.html"
                               className="btn btn-primary"
                             >
                               Watch trailer
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -2127,9 +2128,9 @@ class HomePage extends React.Component {
                       className="row d-block js-mdk-carousel"
                       id="carousel-feedback"
                     >
-                      <a
+                      <Link
                         className="carousel-control-next js-mdk-carousel-control mt-n24pt"
-                        href="#carousel-feedback"
+                        to="#carousel-feedback"
                         role="button"
                         data-slide="next"
                       >
@@ -2140,7 +2141,7 @@ class HomePage extends React.Component {
                           keyboard_arrow_right
                         </span>
                         <span className="sr-only">Next</span>
-                      </a>
+                      </Link>
                       <div className="mdk-carousel__content">
                         <div className="col-12 col-md-6">
                           <div className="card card-feedback card-body">
@@ -2155,22 +2156,22 @@ class HomePage extends React.Component {
                           </div>
                           <div className="media ml-12pt">
                             <div className="media-left mr-12pt">
-                              <a
-                                href="boxed-student-profile.html"
+                              <Link
+                                to="boxed-student-profile.html"
                                 className="avatar avatar-sm"
                               >
                                 <span className="avatar-title rounded-circle">
                                   UK
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="media-body media-middle">
-                              <a
-                                href="boxed-student-profile.html"
+                              <Link
+                                to="boxed-student-profile.html"
                                 className="card-title"
                               >
                                 Umberto Kass
-                              </a>
+                              </Link>
                               <div className="rating mt-4pt">
                                 <span className="rating__item">
                                   <span className="material-icons">star</span>
@@ -2207,22 +2208,22 @@ class HomePage extends React.Component {
                           </div>
                           <div className="media ml-12pt">
                             <div className="media-left mr-12pt">
-                              <a
-                                href="boxed-student-profile.html"
+                              <Link
+                                to="boxed-student-profile.html"
                                 className="avatar avatar-sm"
                               >
                                 <span className="avatar-title rounded-circle">
                                   UK
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="media-body media-middle">
-                              <a
-                                href="boxed-student-profile.html"
+                              <Link
+                                to="boxed-student-profile.html"
                                 className="card-title"
                               >
                                 Umberto Kass
-                              </a>
+                              </Link>
                               <div className="rating mt-4pt">
                                 <span className="rating__item">
                                   <span className="material-icons">star</span>
@@ -2259,22 +2260,22 @@ class HomePage extends React.Component {
                           </div>
                           <div className="media ml-12pt">
                             <div className="media-left mr-12pt">
-                              <a
-                                href="boxed-student-profile.html"
+                              <Link
+                                to="boxed-student-profile.html"
                                 className="avatar avatar-sm"
                               >
                                 <span className="avatar-title rounded-circle">
                                   UK
                                 </span>
-                              </a>
+                              </Link>
                             </div>
                             <div className="media-body media-middle">
-                              <a
-                                href="boxed-student-profile.html"
+                              <Link
+                                to="boxed-student-profile.html"
                                 className="card-title"
                               >
                                 Umberto Kass
-                              </a>
+                              </Link>
                               <div className="rating mt-4pt">
                                 <span className="rating__item">
                                   <span className="material-icons">star</span>
@@ -2307,7 +2308,7 @@ class HomePage extends React.Component {
                   <p className="text-70 brand mb-24pt">
                     <img
                       className="brand-icon"
-                      src="assets/images/logo/black-70@2x.png"
+                      src="/assets/images/logo/black-70@2x.png"
                       width="30"
                       alt="Luma"
                     />{" "}
@@ -2321,12 +2322,12 @@ class HomePage extends React.Component {
                     Projects, eCommerce and more.
                   </p>
                   <p className="mb-8pt d-flex">
-                    <a href="" className="text-70 text-underline mr-8pt small">
+                    <Link to="" className="text-70 text-underline mr-8pt small">
                       Terms
-                    </a>
-                    <a href="" className="text-70 text-underline small">
+                    </Link>
+                    <Link to="" className="text-70 text-underline small">
                       Privacy policy
-                    </a>
+                    </Link>
                   </p>
                   <p className="text-50 small mt-n1 mb-0">
                     Copyright 2019 &copy; All rights reserved.
@@ -2334,7 +2335,6 @@ class HomePage extends React.Component {
                 </div>
               </div>
             </div>
-            <Drawer />
           </div>
         </div>
       </div>

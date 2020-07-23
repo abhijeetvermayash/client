@@ -3,6 +3,7 @@ import Header from "../../Header/header";
 import Drawer from "../../Drawer/drawer";
 import Preloader from "../../preloader";
 import InstructorHeader from "../../Header/instructor-header";
+import InsDrawer from "../../Drawer/instructordrawer";
 
 class InstructorDashboard extends React.Component {
   render() {
@@ -481,7 +482,7 @@ class InstructorDashboard extends React.Component {
             </div>
           </div>
 
-          <Drawer />
+          <InsDrawer />
         </div>
       </div>
     );

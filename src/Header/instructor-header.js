@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
 const InstructorHeader = () => {
   return (
@@ -16,7 +16,7 @@ const InstructorHeader = () => {
         <span class="material-icons">short_text</span>
       </button>
 
-      <a href="boxed-index.html" class="navbar-brand mr-16pt d-lg-none">
+      <Link to="boxed-index.html" class="navbar-brand mr-16pt d-lg-none">
         <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
           <span class="avatar-title rounded bg-primary">
             <img
@@ -28,7 +28,7 @@ const InstructorHeader = () => {
         </span>
 
         <span class="d-none d-lg-block">Luma</span>
-      </a>
+      </Link>
 
       <span class="d-none d-md-flex align-items-center mr-16pt">
         <span class="avatar avatar-sm mr-12pt">
@@ -89,8 +89,8 @@ const InstructorHeader = () => {
                 <strong>Messages</strong>
               </div>
               <div class="list-group list-group-flush mb-0">
-                <a
-                  href="javascript:void(0);"
+                <Link
+                  // to="javascript:void(0);"
                   class="list-group-item list-group-item-action unread"
                 >
                   <span class="d-flex align-items-center mb-1">
@@ -113,10 +113,10 @@ const InstructorHeader = () => {
                       </span>
                     </span>
                   </span>
-                </a>
+                </Link>
 
-                <a
-                  href="javascript:void(0);"
+                <Link
+                  // to="javascript:void(0);"
                   class="list-group-item list-group-item-action"
                 >
                   <span class="d-flex align-items-center mb-1">
@@ -132,10 +132,10 @@ const InstructorHeader = () => {
                     </span>
                     <span class="flex d-flex flex-column">
                       <strong class="text-black-100">Michelle</strong>
-                      <span class="text-black-70">🔥 Superb job..</span>
+                      <span class="text-black-70"> Superb job..</span>
                     </span>
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -163,8 +163,8 @@ const InstructorHeader = () => {
                 <strong>System notifications</strong>
               </div>
               <div class="list-group list-group-flush mb-0">
-                <a
-                  href="javascript:void(0);"
+                <Link
+                  // to="javascript:void(0);"
                   class="list-group-item list-group-item-action unread"
                 >
                   <span class="d-flex align-items-center mb-1">
@@ -186,10 +186,10 @@ const InstructorHeader = () => {
                       </span>
                     </span>
                   </span>
-                </a>
+                </Link>
 
-                <a
-                  href="javascript:void(0);"
+                <Link
+                  // to="javascript:void(0);"
                   class="list-group-item list-group-item-action"
                 >
                   <span class="d-flex align-items-center mb-1">
@@ -210,10 +210,10 @@ const InstructorHeader = () => {
                       </span>
                     </span>
                   </span>
-                </a>
+                </Link>
 
-                <a
-                  href="javascript:void(0);"
+                <Link
+                  // to="javascript:void(0);"
                   class="list-group-item list-group-item-action"
                 >
                   <span class="d-flex align-items-center mb-1">
@@ -233,15 +233,15 @@ const InstructorHeader = () => {
                       </span>
                     </span>
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
 
         <div class="nav-item dropdown">
-          <a
-            href="#"
+          <Link
+            to="#"
             class="nav-link d-flex align-items-center dropdown-toggle"
             data-toggle="dropdown"
             data-caret="false"
@@ -251,27 +251,27 @@ const InstructorHeader = () => {
                 <i class="material-icons">account_box</i>
               </span>
             </span>
-          </a>
+          </Link>
           <div class="dropdown-menu dropdown-menu-right">
             <div class="dropdown-header">
               <strong>Account</strong>
             </div>
-            <a class="dropdown-item" href="boxed-edit-account.html">
+            <Link class="dropdown-item" to="boxed-edit-account.html">
               Edit Account
-            </a>
-            <a class="dropdown-item" href="boxed-billing.html">
+            </Link>
+            <Link class="dropdown-item" to="boxed-billing.html">
               Billing
-            </a>
-            <a class="dropdown-item" href="boxed-billing-history.html">
+            </Link>
+            <Link class="dropdown-item" to="boxed-billing-history.html">
               Payments
-            </a>
-            <a class="dropdown-item" href="boxed-login.html">
+            </Link>
+            <Link class="dropdown-item" to="boxed-login.html">
               Logout
-            </a>
+            </Link>
           </div>
         </div>
       </div>
     </div>
-  );
-};
-export default InstructorHeader;
+  )
+}
+export default InstructorHeader
