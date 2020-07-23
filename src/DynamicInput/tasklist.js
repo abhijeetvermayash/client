@@ -10,7 +10,7 @@ const TaskList = (props) => {
         <td>
           <input
             type="text"
-            name="projectName"
+            name="SectionNumber"
             data-id={idx}
             id={projectName}
             className="form-control "
@@ -19,7 +19,7 @@ const TaskList = (props) => {
         <td>
           <input
             type="text"
-            name="Section"
+            name="SectionName"
             id={task}
             data-id={idx}
             className="form-control "

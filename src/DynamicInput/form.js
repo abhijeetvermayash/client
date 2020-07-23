@@ -50,13 +50,7 @@ class Form extends React.Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
-    if (this.state.date === "" || this.state.description === "") {
-      NotificationManager.warning(
-        "Please Fill up Required Field . Please check Task and Date Field"
-      );
-      return false;
-    }
+
     for (var i = 0; i < this.state.taskList.length; i++) {
       if (
         this.state.taskList[i].projectName === "" ||
@@ -68,7 +62,12 @@ class Form extends React.Component {
         return false;
       }
     }
-    this.props.addsections(this.state);
+
+    const taskList = { sections: this.state.taskList };
+    console.log(taskList.sections);
+
+    console.log(this.state);
+    this.props.addsections(taskList.sections);
   };
 
   /* let data = { formData: this.state, userData: localStorage.getItem("user") };
