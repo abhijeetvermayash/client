@@ -1,11 +1,37 @@
-import React from "react";
-import { connect } from "react-redux";
+import React from "react"
+import { connect } from "react-redux"
 
-import { Link } from "react-router-dom";
-import { SingupAction } from "../Actions/actions";
+import { Link, withRouter } from "react-router-dom"
+import { SingupAction } from "../Actions/actions"
 
 class SignupPage extends React.Component {
-  state = { name: "", email: "", password: "" };
+  constructor() {
+    super()
+    this.state = { username: "", email: "", password: "" }
+    this.onChange = this.onChange.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
+  }
+
+  componentDidMount() {
+    if (this.props.Credentials.isAuthenticated) {
+      this.props.history.push("/")
+    }
+  }
+
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  onSubmit(e) {
+    e.preventDefault()
+    const newUser = {
+      username: this.state.username,
+      email: this.state.email,
+      password: this.state.password
+    }
+    this.props.SingupAction(newUser, this.props.history)
+  }
+
   render() {
     return (
       <div className="layout-default layout-login-image">
@@ -13,7 +39,7 @@ class SignupPage extends React.Component {
           className="layout-login-image__overlay"
           style={{
             backgroundImage:
-              "url(assets/images/photodune-4161018-group-of-students-m.jpg)",
+              "url(assets/images/photodune-4161018-group-of-students-m.jpg)"
           }}
         >
           <div className="fullbleed bg-dark" style={{ opacity: ".5" }}></div>
@@ -42,110 +68,87 @@ class SignupPage extends React.Component {
             </Link>
           </div>
 
-          <h4 class="m-0">Sign up!</h4>
-          <p class="mb-5">Create an account with Luma</p>
+          <h4 className="m-0">Sign up!</h4>
+          <p className="mb-5">Create an account with Luma</p>
 
-          <form action="fixed-index.html" novalidate>
-            <div class="form-group">
-              <label class="text-label" for="name_2">
-                Name:
-              </label>
-              <div class="input-group input-group-merge">
+          <form onSubmit={this.onSubmit} noValidate>
+            <div className="form-group">
+              <label className="text-label">Name:</label>
+              <div className="input-group input-group-merge">
                 <input
                   id="name_2"
                   type="text"
-                  required=""
-                  onChange={(e) => this.setState({ name: e.target.value })}
-                  class="form-control form-control-prepended"
+                  name="username"
+                  value={this.state.username}
+                  onChange={this.onChange}
+                  className="form-control form-control-prepended"
                   placeholder="John Doe"
                 />
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <span class="far fa-user"></span>
+                <div className="input-group-prepend">
+                  <div className="input-group-text">
+                    <span className="far fa-user"></span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="text-label" for="email_2">
-                Email Address:
-              </label>
-              <div class="input-group input-group-merge">
+            <div className="form-group">
+              <label className="text-label">Email Address:</label>
+              <div className="input-group input-group-merge">
                 <input
                   id="email_2"
                   type="email"
-                  required=""
-                  onChange={(e) => this.setState({ email: e.target.value })}
-                  class="form-control form-control-prepended"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  className="form-control form-control-prepended"
                   placeholder="john@doe.com"
                 />
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <span class="far fa-envelope"></span>
+                <div className="input-group-prepend">
+                  <div className="input-group-text">
+                    <span className="far fa-envelope"></span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="text-label" for="password_2">
-                Password:
-              </label>
-              <div class="input-group input-group-merge">
+            <div className="form-group">
+              <label className="text-label">Password:</label>
+              <div className="input-group input-group-merge">
                 <input
                   id="password_2"
                   type="password"
-                  required=""
-                  onChange={(e) => this.setState({ password: e.target.value })}
-                  class="form-control form-control-prepended"
+                  name="password"
+                  value={this.state.password}
+                  onChange={this.onChange}
+                  className="form-control form-control-prepended"
                   placeholder="Enter your password"
                 />
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <span class="far fa-key"></span>
+                <div className="input-group-prepend">
+                  <div className="input-group-text">
+                    <span className="far fa-key"></span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form-group mb-5">
-              <div class="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  checked=""
-                  class="custom-control-input"
-                  id="terms"
-                />
-                <label class="custom-control-label" for="terms">
-                  I accept <Link to="#">Terms and Conditions</Link>
-                </label>
-              </div>
-            </div>
-            <div class="form-group text-center">
-              <button
-                class="btn btn-primary mb-2"
-                onClick={this.Signup}
-                type="submit"
-              >
+
+            <div className="form-group text-center">
+              <button className="btn btn-primary mb-2" type="submit">
                 Create Account
               </button>
               <br />
-              <Link class="text-body text-underline" to="/login">
+              <Link className="text-body text-underline" to="/login">
                 Have an account? Login
               </Link>
             </div>
           </form>
         </div>
       </div>
-    );
+    )
   }
-  Signup = (event) => {
-    event.preventDefault();
-    const credentials = this.state;
-    console.log(credentials);
-    this.props.signup(credentials);
-  };
 }
-const mapStateToProps = (state) => {
-  console.log(state);
-  return state;
-};
-export default connect(mapStateToProps, { signup: SingupAction })(SignupPage);
+const mapStateToProps = (state) => ({
+  Credentials: state.Credentials
+})
+
+export default connect(mapStateToProps, { SingupAction })(
+  withRouter(SignupPage)
+)

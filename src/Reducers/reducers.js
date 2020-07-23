@@ -1,13 +1,24 @@
 import { combineReducers } from "redux";
+import isEmpty from "../validation/is-empty";
+import _ from "lodash";
+import { reducer as FormReducer } from "redux-form";
+import { ReducerCourses } from "./courseReducers";
+import { ReducersSection } from "./courseReducers";
 
-const ReducerAuthenticate = (state = {}, action) => {
+const initialState = {
+  isAuthenticated: false,
+  user: {},
+};
+
+const ReducerAuthenticate = (state = initialState, action) => {
   switch (action.type) {
-    case "LOGIN":
+    case "SET_CURRENT_USER":
       console.log(111);
-      return { ...state, [action.payload.id]: action.payload };
-    case "SIGNUP":
-      console.log(222);
-      return { ...state, [action.payload.id]: action.payload };
+      return {
+        ...state,
+        isAuthenticated: !isEmpty(action.payload),
+        user: action.payload,
+      };
 
     default:
       return state;
@@ -15,6 +26,8 @@ const ReducerAuthenticate = (state = {}, action) => {
 };
 
 export default combineReducers({
-  dummy: "{1}",
   Credentials: ReducerAuthenticate,
+  course: ReducerCourses,
+  Sections: ReducersSection,
+  form: FormReducer,
 });
